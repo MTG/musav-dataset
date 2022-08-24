@@ -28,6 +28,8 @@ This repository contains metadata, scripts, and instructions on how to download 
 	- `triplets.all.chunk.*.songids` - Spotify IDs
 	- `triplets.all.chunk.*.pairs` - annotation pairs for triplets (each record contains a pair ID and song A/B ID, audio filepath, and loudness)
 
+- `genres.chunk_000-006.jsonl` - genre annotations for tracks in chunks 000-006
+
 - `annotations/` - human AV annotations for chunks 000-006
 	- `annotations.@(arousal|valence).all`  - raw comparative annotations on track pairs by anonymized annotators (6,255 pairs). 
 	- `annotations.@(arousal|valence).all.agreement` - processed annotations on track pairs with different level of agreement: disagreement, majority-agreement (MA), full-agreement (FA)
