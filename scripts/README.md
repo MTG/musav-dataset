@@ -18,6 +18,11 @@ Gather all AV predictions from the Spotify-API metadata in one file:
 ```
 The results will be stored in `metadata-spotifyapi_chunks/av-predictions.spotifyapi.jsonl`.
 
+Evaluate AV predictions agains the ground truth
+```
+./scripts/evaluate_all.sh
+```
+
 
 ## Helper scripts for dataset creation and stats
 
@@ -29,6 +34,11 @@ To create files with songids, genre annotations and genre stats for the annotate
 To recreate processed annotation ground truth (agreement and triplet consistency):
 ```
 ./scripts/annotations_groundtruth.sh
+```
+
+Basic agreement stats (number of annotated track pairs with different level of agreement and triplet consistency):
+```
+wc -l data/annotations/annotations.*.agreement*
 ```
 
 To compute agreement stats (global vs genre triplets):
