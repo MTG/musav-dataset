@@ -42,7 +42,6 @@ This repository contains metadata, scripts, and instructions on how to download 
 
 ### Expanding the dataset
 Please, contact us if you want to expand the dataset by annotating more chunks.
->>>>>>> 0a3d39c8d7c5aec030ddb5bc5fbb55002b8283d4
 
 
 ## Citing the dataset
