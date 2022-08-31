@@ -37,7 +37,12 @@ This repository contains metadata, scripts, and instructions on how to download 
 	- `annotations.@(arousal|valence).all.agreement.gt.ct` - ground-truth annotations with FA/MA and triplet consistency
 	- `annotations.@(arousal|valence).all.agreement.gt.ct.fa` - ground-truth annotations with FA and triplet consistency
 
-- `audio_chunks/` (764 MB) and `metadata-spotifyapi_chunks/` (1.3 GB) - audio track previews and metadata gathered from the Spotify API for the annotated chunks 000-006 (2,100 tracks). Download these folders from Zenodo. Available under request for non-commercial scientific research purposes only. Any publication of results based on this data must cite Spotify API as the source of the data.
+- `audio_chunks/` (764 MB) and `metadata-spotifyapi_chunks/` (1.3 GB) - audio track previews and metadata gathered from the Spotify API for the annotated chunks 000-006 (2,100 tracks). Download these archived folders from Zenodo and unpack them into `data/` (available under request).
+
+
+### Expanding the dataset
+Please, contact us if you want to expand the dataset by annotating more chunks.
+>>>>>>> 0a3d39c8d7c5aec030ddb5bc5fbb55002b8283d4
 
 
 ## Citing the dataset
@@ -58,11 +63,15 @@ Please consider citing [the following publication](TODO) when using the dataset:
 ```
 
 
-## License TODO
+## License
 
-Copyright 2022 Music Technology Group
+- The AV annotations metadata is licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+- The audio track previews and Spotify API metadata are released for non-commercial scientific research purposes only. Any publication of results based on the data extracts of the AllMusic database must cite AllMusic as the source of the data.
+
 
 
 ## Acknowledgments
 
-TODO grants. We thank all the annotators who participated in the creation of the dataset.
+This research was carried out under the project Musical AI - PID2019-111403GB-I00/AEI/10.13039/501100011033, funded by the Spanish Ministerio de Ciencia e Innovación and the Agencia Estatal de Investigación.
+
+We thank all the annotators who participated in the creation of the dataset.
