@@ -37,7 +37,7 @@ This repository contains metadata, scripts, and instructions on how to download 
 	- `annotations.@(arousal|valence).all.agreement.gt.ct` - ground-truth annotations with FA/MA and triplet consistency
 	- `annotations.@(arousal|valence).all.agreement.gt.ct.fa` - ground-truth annotations with FA and triplet consistency
 
-- `audio_chunks/` (764 MB) and `annotations-spotifyapi_chunks/` (1.3 GB) - audio track previews and metadata gathered from the Spotify API for the annotated chunks 000-006 (2,100 tracks). Download these folders from Zenodo. Available under request for non-commercial scientific research purposes only. Any publication of results based on this data must cite Spotify API as the source of the data.
+- `audio_chunks/` (764 MB) and `metadata-spotifyapi_chunks/` (1.3 GB) - audio track previews and metadata gathered from the Spotify API for the annotated chunks 000-006 (2,100 tracks). Download these folders from Zenodo. Available under request for non-commercial scientific research purposes only. Any publication of results based on this data must cite Spotify API as the source of the data.
 
 
 ## Citing the dataset
