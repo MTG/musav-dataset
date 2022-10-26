@@ -46,7 +46,7 @@ Please, contact us if you want to expand the dataset by annotating more chunks.
 
 ## Citing the dataset
 
-Please consider citing [the following publication](TODO) when using the dataset:
+Please consider citing [the following publication](http://hdl.handle.net/10230/54181) when using the dataset:
 
 > Bogdanov, D., Lizarraga-Seijas, X., Alonso-Jiménez, P., & Serra X. (2022). MusAV: A dataset of relative arousal-valence annotations for validation of audio models. International Society for Music Information Retrieval Conference (ISMIR 2022).
 
@@ -57,7 +57,7 @@ Please consider citing [the following publication](TODO) when using the dataset:
     booktitle = "International Society for Music Information Retrieval Conference (ISMIR 2022)",
     year = "2022",
     address = "Bengaluru, India",
-    url = "TODO"
+    url = "http://hdl.handle.net/10230/54181"
 }
 ```
 
