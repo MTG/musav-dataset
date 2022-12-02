@@ -1,5 +1,7 @@
 # The MusAV Dataset
 
+**NOTE** The dataset will be published online on December 4. Thanks for visiting!
+
 TODO Zenodo DOI badge
 
 MusAV is a new public benchmark dataset for comparative validation of arousal and valence (AV) regression models for audio-based music emotion recognition.
