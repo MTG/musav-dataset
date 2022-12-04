@@ -45,3 +45,8 @@ To compute agreement stats (global vs genre triplets):
 ```
 scripts/stats_agreement_global_vs_genre.sh
 ```
+
+To compute inter-annotator agreement (Krippendorff's alpha)
+```
+./scripts/stats_agreement_krippendorff.sh
+```
