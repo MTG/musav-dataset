@@ -5,7 +5,7 @@
 TODO Zenodo DOI badge
 
 MusAV is a new public benchmark dataset for comparative validation of arousal and valence (AV) regression models for audio-based music emotion recognition.
-We built MusAV by gathering comparative annotations of arousal and valence on pairs of tracks, using track audio previews and metadata from the Spotify API.
+We built MusAV by gathering comparative annotations of arousal and valence on pairs of music tracks, using track audio previews and metadata from the Spotify API.
 The resulting dataset contains 2,092 track previews covering 1,404 genres, with pairwise relative AV judgments by 20 annotators and various subsets of the ground truth based on different levels of annotation agreement.
 
 This repository contains metadata, scripts, and instructions on how to download and use the dataset.
@@ -13,9 +13,15 @@ This repository contains metadata, scripts, and instructions on how to download 
 
 ## Structure
 
-Read the [publication](#citing-the-dataset) for more details about the dataset creation and annotation process.
+Read the [ISMIR 2022 publication](#citing-the-dataset) for more details about the dataset creation and annotation process.
 
 ### Data in [`data`](https://github.com/MTG/musav-dataset/tree/dev/data)
+
+We provide metadata for the entire annotation pool (a preselection of music tracks for annotation) we used to create the dataset,  organized into triplets of tracks and split into chunks.
+
+We have gathered human arousal/valence pairwise relative annotations for chunks 001-006, with three participating human annotators for each chunk. The dataset includes audio previews and Spotify API metadata for the annotated chunks. Please, contact us if you want to expand the dataset by annotating more chunks.
+
+The data is organized as following:
 
 - `audio.songids` - Spotify IDs for all 17,574 track previews in the annotation pool (initial list of candidate tracks for annotation)
 - `genres.jsonl` - corresponding genre annotations
@@ -41,16 +47,19 @@ Read the [publication](#citing-the-dataset) for more details about the dataset c
 	- `annotations.@(arousal|valence).all.agreement.gt.ct` - ground-truth annotations with FA/MA and triplet consistency
 	- `annotations.@(arousal|valence).all.agreement.gt.ct.fa` - ground-truth annotations with FA and triplet consistency
 
-- (Zenodo) `audio_chunks/` (764 MB) and `metadata-spotifyapi_chunks/` (1.3 GB) - audio track previews and metadata gathered from the Spotify API for the annotated chunks 000-006 (2,100 tracks). Download these archived folders from Zenodo and unpack them into `data/` (available under request).
+    - `ismir2022/` - ground truth used to report evaluation results in the ISMIR 2022 publication (discarded tracks that belong to the MuSe dataset, which was used to train some of the evaluated models).
+
+- ([Zenodo](TODO URL)) `audio_chunks/` (764 MB) and `metadata-spotifyapi_chunks/` (1.3 GB) - audio track previews and metadata gathered from the Spotify API for the annotated chunks 000-006 (2,100 tracks). Download these archived folders from Zenodo and unpack them into `data/` (available under request).
 
 
-## Expanding the dataset
-Please, contact us if you want to expand the dataset by annotating more chunks.
+### Statistics in [`stats`](https://github.com/MTG/musav-dataset/tree/dev/stats)
+
+- `genres.chunk_000-006.stats.tsv` - genre occurrences (number of tracks) in the annotated chunks 000-006
 
 
 ## Citing the dataset
 
-Please consider citing [the following publication](http://hdl.handle.net/10230/54181) when using the dataset:
+Please consider citing [the following ISMIR 2022 publication](http://hdl.handle.net/10230/54181) when using the dataset:
 
 > Bogdanov, D., Lizarraga-Seijas, X., Alonso-Jiménez, P., & Serra X. (2022). MusAV: A dataset of relative arousal-valence annotations for validation of audio models. International Society for Music Information Retrieval Conference (ISMIR 2022).
 
