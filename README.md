@@ -13,7 +13,7 @@ This repository contains metadata, scripts, and instructions on how to download 
 
 ## Structure
 
-Read the [ISMIR 2022 publication](#citing-the-dataset) for more details about the dataset creation and annotation process.
+Read the [ISMIR 2022 publication](#citing-the-dataset) for more details about the dataset creation and annotation process. You can also check our [ISMIR 2022 presentation materials](https://ismir2022program.ismir.net/poster_286.html) (poster, video).
 
 ### Data in [`data`](https://github.com/MTG/musav-dataset/tree/dev/data)
 
