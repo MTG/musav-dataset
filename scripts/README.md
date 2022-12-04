@@ -12,7 +12,7 @@ Run all scripts from the root directory of the repository.
 
 ### Evaluation of AV values from Spotify API
 
-Download the `metadata-spotifyapi_chunks` folder from Zenodo.
+Download the `metadata-spotifyapi_chunks` folder from [Zenodo](TODO URL) (unpack into `data/`).
 
 Gather all AV predictions from the Spotify API metadata in one file:
 ```
