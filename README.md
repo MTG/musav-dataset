@@ -13,13 +13,15 @@ This repository contains metadata, scripts, and instructions on how to download 
 
 ## Structure
 
-### Data in [`data`](data)
+Read the [publication](#citing-the-dataset) for more details about the dataset creation and annotation process.
 
-- `audio.songids` - Spotify IDs for all 17,574 track previews in the annotation pool (initial candidates)
-- `genres.jsonl` - genre annotations
+### Data in [`data`](https://github.com/MTG/musav-dataset/tree/dev/data)
+
+- `audio.songids` - Spotify IDs for all 17,574 track previews in the annotation pool (initial list of candidate tracks for annotation)
+- `genres.jsonl` - corresponding genre annotations
 - `audio.ebur128` - EBU R128 integrated loudness (computed with [Essentia](https://essentia.upf.edu/reference/std_LoudnessEBUR128.html))
-- `audio.ebur128_-20-5.songids` - Spotify IDs for 15,979 track previews in the final annotation pool that are within typical [-20, -5] LUFS loudness range (tracks selected for annotation)
-- `genres.ebur128_-20-5.jsonl` - their genre annotations
+- `audio.ebur128_-20-5.songids` - Spotify IDs for 15,979 track previews in the final annotation pool (tracks within a typical [-20, -5] LUFS loudness range, selected for annotation)
+- `genres.ebur128_-20-5.jsonl` - corresponding genre annotations
 - `triplets.jsonl` - 5,326 triplets generated for these tracks. No track appears in more than one triplet. The triplets include:
 	- *genre-triplets* (all tracks sharing the same genre, one triplet per genre)
 	- *global-triplets* (the remaining tracks)
@@ -39,10 +41,10 @@ This repository contains metadata, scripts, and instructions on how to download 
 	- `annotations.@(arousal|valence).all.agreement.gt.ct` - ground-truth annotations with FA/MA and triplet consistency
 	- `annotations.@(arousal|valence).all.agreement.gt.ct.fa` - ground-truth annotations with FA and triplet consistency
 
-- `audio_chunks/` (764 MB) and `metadata-spotifyapi_chunks/` (1.3 GB) - audio track previews and metadata gathered from the Spotify API for the annotated chunks 000-006 (2,100 tracks). Download these archived folders from Zenodo and unpack them into `data/` (available under request).
+- (Zenodo) `audio_chunks/` (764 MB) and `metadata-spotifyapi_chunks/` (1.3 GB) - audio track previews and metadata gathered from the Spotify API for the annotated chunks 000-006 (2,100 tracks). Download these archived folders from Zenodo and unpack them into `data/` (available under request).
 
 
-### Expanding the dataset
+## Expanding the dataset
 Please, contact us if you want to expand the dataset by annotating more chunks.
 
 
