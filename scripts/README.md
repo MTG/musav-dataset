@@ -12,7 +12,7 @@ Run all scripts from the root directory of the repository.
 
 Download the `metadata-spotifyapi_chunks` folder from Zenodo.
 
-Gather all AV predictions from the Spotify-API metadata in one file:
+Gather all AV predictions from the Spotify API metadata in one file:
 ```
 ./scripts/spotifyapi_av_predictions.sh
 ```
@@ -24,9 +24,9 @@ Evaluate AV predictions agains the ground truth
 ```
 
 
-## Helper scripts for dataset creation and stats
+## Helper scripts used for dataset creation and stats
 
-To create files with songids, genre annotations and genre stats for the annotated chunks 000-006:
+To create files with Spotify track IDs, genre annotations and genre stats for the annotated chunks 000-006:
 ```
 ./scripts/chunks_songids_genres.sh
 ```
