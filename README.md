@@ -15,7 +15,7 @@ This repository contains metadata, scripts, and instructions on how to download 
 
 Read the [ISMIR 2022 publication](#citing-the-dataset) for more details about the dataset creation and annotation process. You can also check our [ISMIR 2022 presentation materials](https://ismir2022program.ismir.net/poster_286.html) (poster, video).
 
-### Data in [`data`](https://github.com/MTG/musav-dataset/tree/dev/data)
+### Data in [`data`](https://github.com/MTG/musav-dataset/tree/main/data)
 
 We provide metadata for the entire annotation pool (a preselection of music tracks for annotation) we used to create the dataset, organized into triplets of tracks and split into chunks.
 
@@ -56,7 +56,7 @@ The data is organized in TSV and JSONL formats as follows:
 We provide scripts for evaluation of arousal/valence regression model predictions on the MusAV ground truth as well as scripts used for dataset creation and stats.
 
 
-### Statistics in [`stats`](https://github.com/MTG/musav-dataset/tree/dev/stats)
+### Statistics in [`stats`](https://github.com/MTG/musav-dataset/tree/main/stats)
 
 - `genres.chunk_000-006.stats.tsv` - genre occurrences (number of tracks) in the annotated chunks 000-006
 
