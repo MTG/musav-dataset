@@ -13,7 +13,7 @@ This repository contains metadata, scripts, and instructions on how to download 
 
 ## Structure
 
-Read the [ISMIR 2022 publication](#citing-the-dataset) for more details about the dataset creation and annotation process.
+Read the [ISMIR 2022 publication](#citing-the-dataset) for more details about the dataset creation and annotation process. You can also check our [ISMIR 2022 presentation materials](https://ismir2022program.ismir.net/poster_286.html) (poster, video).
 
 ### Data in [`data`](https://github.com/MTG/musav-dataset/tree/dev/data)
 
@@ -52,6 +52,8 @@ The data is organized in TSV and JSONL formats as follows:
 
 
 ### Scripts in [`scripts`](scripts)
+
+We provide scripts for evaluation of arousal/valence regression model predictions on the MusAV ground truth as well as scripts used for dataset creation and stats.
 
 
 ### Statistics in [`stats`](https://github.com/MTG/musav-dataset/tree/dev/stats)

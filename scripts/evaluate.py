@@ -18,10 +18,12 @@ else:
     sys.exit()
 
 predictions = {}
+models = set()
 for line in open(args.predictions):
     track_prediction = json.loads(line)
     songid = track_prediction['songid']
     model = track_prediction['model']
+    models.add(model)
 
     if annotation_type == 'arousal':
         value = track_prediction['arousal_mean']
@@ -31,7 +33,8 @@ for line in open(args.predictions):
     predictions.setdefault(songid, {})
     predictions[songid][model] = value
 
-models = [ 'spotifyapi']
+models = list(models)
+print(f"Found predictions for models {models}")
 
 results = {}
 for model in models:
