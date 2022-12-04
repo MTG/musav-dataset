@@ -53,6 +53,8 @@ The data is organized in TSV and JSONL formats as follows:
 
 ### Scripts in [`scripts`](scripts)
 
+We provide scripts for evaluation of arousal/valence regression model predictions on the MusAV ground truth as well as scripts used for dataset creation and stats.
+
 
 ### Statistics in [`stats`](https://github.com/MTG/musav-dataset/tree/dev/stats)
 
