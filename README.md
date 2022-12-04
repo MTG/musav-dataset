@@ -20,7 +20,7 @@ Read the [publication](#citing-the-dataset) for more details about the dataset c
 - `audio.songids` - Spotify IDs for all 17,574 track previews in the annotation pool (initial list of candidate tracks for annotation)
 - `genres.jsonl` - corresponding genre annotations
 - `audio.ebur128` - EBU R128 integrated loudness (computed with [Essentia](https://essentia.upf.edu/reference/std_LoudnessEBUR128.html))
-- `audio.ebur128_-20-5.songids` - Spotify IDs for 15,979 track previews in the final annotation pool (tracks within a typical [-20, -5] LUFS loudness range, selected for annotation)
+- `audio.ebur128_-20-5.songids` - Spotify IDs for 15,979 track previews in the final annotation pool (tracks within a typical loudness range of [-20, -5] LUFS, selected for annotation)
 - `genres.ebur128_-20-5.jsonl` - corresponding genre annotations
 - `triplets.jsonl` - 5,326 triplets generated for these tracks. No track appears in more than one triplet. The triplets include:
 	- *genre-triplets* (all tracks sharing the same genre, one triplet per genre)
@@ -69,8 +69,7 @@ Please consider citing [the following publication](http://hdl.handle.net/10230/5
 ## License
 
 - The AV annotations metadata is licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
-- The audio track previews and Spotify API metadata are released for non-commercial scientific research purposes only. Any publication of results based on the data extracts of the AllMusic database must cite AllMusic as the source of the data.
-
+- The audio track previews and Spotify API metadata are released for non-commercial scientific research purposes only. Any publication of results based on the data extracts of the Spotify database must cite Spotify as the source of the data.
 
 
 ## Acknowledgments
