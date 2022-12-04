@@ -17,20 +17,18 @@ Read the [ISMIR 2022 publication](#citing-the-dataset) for more details about th
 
 ### Data in [`data`](https://github.com/MTG/musav-dataset/tree/dev/data)
 
-We provide metadata for the entire annotation pool (a preselection of music tracks for annotation) we used to create the dataset,  organized into triplets of tracks and split into chunks.
+We provide metadata for the entire annotation pool (a preselection of music tracks for annotation) we used to create the dataset, organized into triplets of tracks and split into chunks.
 
-We have gathered human arousal/valence pairwise relative annotations for chunks 001-006, with three participating human annotators for each chunk. The dataset includes audio previews and Spotify API metadata for the annotated chunks. Please, contact us if you want to expand the dataset by annotating more chunks.
+We have gathered human arousal/valence pairwise relative annotations for **chunks 001-006**, with three participating human annotators for each chunk. The dataset includes audio previews and Spotify API metadata for the annotated chunks. Please, contact us if you want to expand the dataset by annotating more chunks.
 
-The data is organized as following:
+The data is organized in TSV and JSONL formats as follows:
 
 - `audio.songids` - Spotify IDs for all 17,574 track previews in the annotation pool (initial list of candidate tracks for annotation)
 - `genres.jsonl` - corresponding genre annotations
 - `audio.ebur128` - EBU R128 integrated loudness (computed with [Essentia](https://essentia.upf.edu/reference/std_LoudnessEBUR128.html))
 - `audio.ebur128_-20-5.songids` - Spotify IDs for 15,979 track previews in the final annotation pool (tracks within a typical loudness range of [-20, -5] LUFS, selected for annotation)
 - `genres.ebur128_-20-5.jsonl` - corresponding genre annotations
-- `triplets.jsonl` - 5,326 triplets generated for these tracks. No track appears in more than one triplet. The triplets include:
-	- *genre-triplets* (all tracks sharing the same genre, one triplet per genre)
-	- *global-triplets* (the remaining tracks)
+- `triplets.jsonl` - 5,326 triplets generated for these tracks. No track appears in more than one triplet. The triplets include *genre-triplets* (all tracks sharing the same genre, one triplet per genre) and *global-triplets* (the remaining tracks)
 
 - `chunks/` - triplets split into annotation chunks
 	- `triplets.global.chunk.*` - global-triplets
@@ -39,6 +37,7 @@ The data is organized as following:
 	- `triplets.all.chunk.*.pairs` - annotation pairs for triplets (each record contains a pair ID and song A/B ID, audio filepath, and loudness)
 
 - `genres.chunk_000-006.jsonl` - genre annotations for tracks in chunks 000-006
+- `audio.chunk_000-006.songids` - Spotify IDs for tracks in chunks 000-006
 
 - `annotations/` - human AV annotations for chunks 000-006
 	- `annotations.@(arousal|valence).all`  - raw comparative annotations on track pairs by anonymized annotators (6,255 pairs). 
@@ -50,6 +49,9 @@ The data is organized as following:
     - `ismir2022/` - ground truth used to report evaluation results in the ISMIR 2022 publication (discarded tracks that belong to the MuSe dataset, which was used to train some of the evaluated models).
 
 - ([Zenodo](TODO URL)) `audio_chunks/` (764 MB) and `metadata-spotifyapi_chunks/` (1.3 GB) - audio track previews and metadata gathered from the Spotify API for the annotated chunks 000-006 (2,100 tracks). Download these archived folders from Zenodo and unpack them into `data/` (available under request).
+
+
+### Scripts in [`scripts`](scripts)
 
 
 ### Statistics in [`stats`](https://github.com/MTG/musav-dataset/tree/dev/stats)
