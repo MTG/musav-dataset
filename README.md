@@ -48,7 +48,7 @@ The data is organized in TSV and JSONL formats as follows:
 
     - `ismir2022/` - ground truth used to report evaluation results in the ISMIR 2022 publication (discarded tracks that belong to the MuSe dataset, which was used to train some of the evaluated models).
 
-- ([Zenodo](TODO URL)) `audio_chunks/` (764 MB) and `metadata-spotifyapi_chunks/` (1.3 GB) - audio track previews and metadata gathered from the Spotify API for the annotated chunks 000-006 (2,100 tracks). Download these archived folders from Zenodo and unpack them into `data/` (available under request).
+- ([Zenodo](TODO URL)) `audio_chunks/` (764 MB) and `metadata-spotifyapi_chunks/` (1.3 GB) - audio track previews and metadata gathered from the Spotify API for the annotated chunks 000-006 (2,100 tracks). Download these archived folders from Zenodo and unpack them into `data/` (available under request for non-commercial scientific research purposes only).
 
 
 ### Scripts in [`scripts`](scripts)
