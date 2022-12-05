@@ -17,7 +17,7 @@ Read the [ISMIR 2022 publication](#citing-the-dataset) for more details about th
 
 ### Data in [`data`](https://github.com/MTG/musav-dataset/tree/main/data)
 
-We provide metadata for the entire annotation pool (a preselection of music tracks for annotation) we used to create the dataset, organized into triplets of tracks and split into chunks.
+We provide metadata for the entire annotation pool (a preselection of music tracks for annotation) we used to create the dataset, organized into triplets of tracks (for which we collect pairwise annotations) and split into chunks.
 
 We have gathered human arousal/valence pairwise relative annotations for **chunks 001-006**, with three participating human annotators for each chunk. The dataset includes audio previews and Spotify API metadata for the annotated chunks. Please, contact us if you want to expand the dataset by annotating more chunks.
 
