@@ -61,7 +61,7 @@ We provide scripts for evaluation of arousal/valence regression model prediction
 
 ## Citing the dataset
 
-Please consider citing [the following ISMIR 2022 publication](http://hdl.handle.net/10230/54181) when using the dataset:
+Please cite [the following ISMIR 2022 publication](http://hdl.handle.net/10230/54181) when using the dataset:
 
 > Bogdanov, D., Lizarraga-Seijas, X., Alonso-Jiménez, P., & Serra X. (2022). MusAV: A dataset of relative arousal-valence annotations for validation of audio models. International Society for Music Information Retrieval Conference (ISMIR 2022).
 
